@@ -1,155 +1,123 @@
-# Open •i•
+# Open •i• — The Open Agent Harness & ADE
 
-**The open meta-harness and Agent Development Environment for fleets of intelligent agents.**
+**Agent = Model + Harness.**  
+**Open •i• is the open-source harness *and* the workspace.**
 
-> Agent = Model + Harness.  
-> Open •i• is the harness *and* the workspace.
+Open •i• is the ultimate open Agent Harness and Agent Development Environment. It fuses the deep multi-agent orchestration, adaptive vector memory, self-learning intelligence, and zero-trust federation of modern harness systems with a polished desktop + mobile workspace that runs any CLI agent with your own subscription.
 
-Open •i• is the ultimate fusion of the deep agent orchestration layer of [Ruflo](https://github.com/ruvnet/ruflo) and the polished multi-agent ADE of [Orca](https://github.com/stablyai/orca).
-
-It gives you one place to run, isolate, coordinate, remember, learn, and federate any coding agents — with enterprise-grade controls, self-learning memory, and a desktop + mobile experience that feels native.
+If you are searching for an **agent harness**, an **open agent harness**, a **multi-agent ADE**, or a self-hosted system that lets fleets of coding agents share memory, coordinate as swarms, and remain auditable — this is the project.
 
 ---
 
-## Vision
+## What Is an Agent Harness?
 
-**Open Intelligence. Open Interface. Open Source.**
+An **agent harness** is the execution layer wrapped around a language model. The model writes. The harness gives it tools, memory, loops, sandboxes, permissions, and controls so it can actually do work.
 
-Run 1 to 100 agents in parallel isolated worktrees.  
-Give them shared vector memory, swarm coordination, self-learning patterns, and zero-trust federation.  
-Monitor and steer everything from desktop or mobile.  
-Bring your own subscriptions. Own your data. Own your edge.
+In 2026 the formula is simple and widely repeated:
+
+> **Agent = Model + Harness**
+
+The model is the rented black box. The harness is the part you own: the tool registry, the context manager, the memory store, the permission gate, the retry loop, the audit log, and the verification step. Change the harness and the same model can jump many places in rankings. Keep the model and improve the harness, and reliability, cost, and capability all move.
+
+Open •i• is built as a complete, open, ownable Agent Harness. It does not lock you to one model or one vendor. It is designed so that any CLI agent (Claude Code, Codex, Grok, Cursor, OpenCode, Pi, Hermes, and others) can receive the full harness treatment — or run as a plain agent when you prefer.
+
+---
+
+## Why Open •i• Exists
+
+Two strong open projects showed the shape of the problem:
+
+- **Ruflo** (ruvnet/ruflo) demonstrated what a deep Agent Harness looks like: 100+ specialized agents, HNSW vector memory, self-learning patterns, swarm topologies with consensus, zero-trust federation, and a rich MCP tool surface.
+- **Orca** (stablyai/orca) demonstrated what a polished Agent Development Environment looks like: parallel isolated Git worktrees, support for any CLI agent with bring-your-own-subscription, high-performance terminals, a mobile companion, Design Mode, and deep integrations.
+
+Open •i• takes both and builds the missing piece: a single open system that is both the harness and the workspace. You get the intelligence layer and the human interface in one place, under your control, with no lock-in.
 
 ---
 
 ## Core Architecture
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                     Experience Plane                        │
-│  Desktop ADE · Mobile Companion · Worktrees · Terminals     │
-│  Design Mode · Diff Annotation · GitHub/Linear · SSH        │
-│  (Orca DNA)                                                 │
-├──────────────────────────────────────────────────────────────┤
-│                     Harness Plane                           │
-│  Swarm Orchestration · Vector Memory · Learning Loop        │
-│  Federation · MCP Tools (300+) · Specialized Agents         │
-│  MetaHarness · Security · Plugins · Cost Tracking           │
-│  (Ruflo DNA)                                                │
-├──────────────────────────────────────────────────────────────┤
-│                     Control Plane                           │
-│  Unified Cockpit · Topology View · Memory Inspector         │
-│  Permission Modes · Audit Logs · Federation Mesh            │
-└──────────────────────────────────────────────────────────────┘
-```
+Open •i• is organized into three planes.
 
-### 1. Experience Plane (from Orca)
-- Parallel isolated Git worktrees — fan one prompt across many agents and compare/merge the winner
-- Any CLI agent support (Claude Code, Codex, Grok, Cursor, OpenCode, Pi, Hermes, and any terminal agent) with BYO subscription
-- High-performance WebGL terminals with infinite splits and persistent scrollback
-- Mobile companion for monitoring, notifications, and follow-up steering
-- Design Mode: click UI elements → capture HTML/CSS/screenshots into prompts
-- Diff annotation, drag-and-drop files/images into agents
-- GitHub & Linear integration, SSH remote worktrees, computer use
-- Quick open search across worktrees, files, agents, and context
-- Account switching and usage/rate-limit tracking
+### 1. Experience Plane
+The human-facing workspace. Parallel isolated Git worktrees. Any CLI agent. High-performance terminals. Mobile companion for monitoring and steering. Design Mode that captures UI elements into prompts. Diff annotation. GitHub and Linear integration. SSH remote worktrees. Computer use. Quick search across worktrees, files, agents, and context.
 
-### 2. Harness Plane (from Ruflo)
-- **100+ specialized agents** + ability to inject harness capabilities into any base agent via MCP
-- Swarm coordination: hierarchical (Queen-led), mesh, adaptive topologies with Raft/Byzantine/Gossip consensus
-- Adaptive vector memory: HNSW-indexed AgentDB / RuVector with hybrid search, graph hops, and diversity ranking
-- Self-learning intelligence: SONA neural patterns, ReasoningBank, trajectory contrastive learning
-- Zero-trust federation: agents across machines/orgs discover, authenticate (mTLS + ed25519), exchange work with PII redaction and trust scoring
-- MCP server with 300+ tools (memory, swarm, neural, security, browser, GitHub, etc.)
-- Plugin system and marketplace
-- MetaHarness: grade agent setups, security scans, project snapshots, ejection to standalone toolkits
-- Background workers, cost tracking, compliance modes (HIPAA, SOC2, GDPR), AIDefence
+### 2. Harness Plane
+The intelligence layer. Swarm coordination (hierarchical, mesh, adaptive) with consensus. Adaptive vector memory (HNSW-indexed) with hybrid search and graph hops. Self-learning (pattern banks, trajectory contrastive learning). Zero-trust federation across machines and organizations. MCP server exposing hundreds of tools. Plugin system. MetaHarness grading and security scans. Background workers. Cost tracking. Compliance-ready audit trails.
 
 ### 3. Unified Control Plane
-- One cockpit showing worktree fleets *and* swarm topologies
-- Optional deep harness mode: even plain CLI agents receive memory, hooks, and coordination tools
-- Live memory inspector, learning trajectory viewer, federation mesh visualizer
-- Granular permission modes (read / ask / write / auto) with full audit trails
-- TUI + visual console + full desktop experience
+The cockpit that shows both worktree fleets and swarm topologies. Optional deep harness mode that injects memory, hooks, and coordination into any agent via MCP. Memory inspector. Learning trajectory viewer. Federation mesh visualizer. Granular permission modes. Full audit logs.
 
 ---
 
-## Key Differentiators
+## Key Capabilities
 
-| Capability                  | Ruflo          | Orca           | **Open •i•**                  |
-|----------------------------|----------------|----------------|-------------------------------|
-| Parallel worktrees         | Basic          | Excellent      | Excellent + Swarm-aware       |
-| Any CLI agent              | Partial        | Excellent      | Excellent                     |
-| Deep vector memory         | Excellent      | —              | Excellent + Shared across fleet |
-| Swarm coordination         | Excellent      | Light          | Excellent                     |
-| Self-learning              | Excellent      | —              | Excellent                     |
-| Federation                 | Excellent      | SSH only       | Zero-trust mesh               |
-| Desktop + Mobile UI        | Console/TUI    | Excellent      | Excellent + Cockpit           |
-| MCP tools                  | 300+           | CLI-focused    | 300+ injected                 |
-| MetaHarness / Audit        | Yes            | —              | Yes                           |
-| Design Mode / Computer Use | Partial        | Excellent      | Excellent                     |
+- **Any agent, harnessed or plain** — Run Claude Code, Codex, Grok, Cursor, OpenCode, Pi, Hermes, or any other CLI agent. Inject the full harness when you want shared memory and coordination.
+- **Parallel worktrees** — Fan one prompt across multiple agents, each in its own isolated Git worktree. Compare, annotate, and merge the winner.
+- **Shared vector memory** — HNSW-indexed store that persists across sessions, agents, and machines. Hybrid search, graph hops, diversity ranking.
+- **Self-learning loop** — Agents improve from successful trajectories. Patterns are stored and reused so the system gets better without constant model calls.
+- **Swarm coordination** — Hierarchical (Queen-led), mesh, and adaptive topologies. Consensus protocols so agents can agree and hand off work.
+- **Zero-trust federation** — Agents on different machines discover, authenticate, and exchange work with mTLS, ed25519, PII redaction, and trust scoring.
+- **MCP tool surface** — Hundreds of tools for memory, swarm, neural routing, security, browser, GitHub, and more, injectable into any agent.
+- **Desktop + mobile** — Full ADE on desktop. Mobile companion for notifications and follow-up steering.
+- **Evidence and audit** — Every important action is logged. MetaHarness can grade setups and produce evidence of what ran.
+
+---
+
+## How It Compares
+
+| Capability              | Typical Framework | Single-Agent CLI | **Open •i•**                  |
+|-------------------------|-------------------|------------------|-------------------------------|
+| Agent Harness depth     | Partial           | Light            | Full (memory + learning + federation) |
+| Any CLI agent           | Limited           | One              | Any                           |
+| Parallel isolation      | Rare              | No               | Worktrees + swarm-aware       |
+| Shared vector memory    | Add-on            | Session only     | First-class, cross-agent      |
+| Self-learning           | Rare              | No               | Trajectory + pattern bank     |
+| Federation              | No                | No               | Zero-trust mesh               |
+| Desktop + mobile ADE    | No                | Terminal only    | Yes                           |
+| Audit & evidence        | Light             | Light            | Built-in                      |
+| Open source / ownable   | Varies            | Varies           | MIT, self-hostable            |
 
 ---
 
 ## Core Workflows
 
-### 1. Parallel Fleet (Orca style)
+### Parallel Fleet
 ```bash
 openi worktree fan "Implement the auth module" --agents claude,codex,grok,opencode
 ```
-Each agent works in its own isolated worktree. Compare diffs, annotate, and merge the winner.
+Each agent works in its own isolated worktree. You compare diffs, annotate, and merge the best result.
 
-### 2. Harnessed Swarm (Ruflo style)
+### Harnessed Swarm
 ```bash
 openi swarm init --topology hierarchical --max-agents 12 --memory shared
 openi swarm task "Design and implement the payment system with full test coverage"
 ```
-Queen coordinates specialized agents (architect, coder, tester, security). Shared vector memory and learning flywheel active.
+A coordinating agent routes work to specialized roles. Shared memory and the learning loop stay active.
 
-### 3. Hybrid Mode
-Run plain agents and fully harnessed swarms side-by-side in the same ADE. Inject harness capabilities into any agent via MCP when needed.
+### Hybrid
+Run plain agents and fully harnessed swarms side-by-side. Inject harness capabilities into any agent via MCP only when needed.
 
-### 4. Federated Edge
+### Federated Edge
 ```bash
 openi federation join --peer edge-node.local
 ```
-Agents on your laptop, a remote VPS, and a colleague’s machine collaborate with zero-trust channels, trust scoring, and PII gates.
-
----
-
-## Technology Stack (Proposed)
-
-| Layer              | Technologies                                      |
-|--------------------|---------------------------------------------------|
-| Desktop ADE        | Tauri (Rust + WebView) or Electron + Vite         |
-| Mobile Companion   | React Native or Flutter                           |
-| Orchestration      | TypeScript (Ruflo-style) + Rust WASM kernels      |
-| Memory             | AgentDB / HNSW + SQLite / optional RuVector       |
-| Terminals          | WebGL / Ghostty-inspired renderer                 |
-| Federation         | mTLS + WireGuard mesh + ed25519                   |
-| Agents             | Any CLI + MCP injection layer                     |
-| Plugins            | Open marketplace (compatible with both ecosystems)|
+Agents on your laptop, a remote machine, and a colleague’s machine collaborate with authentication, trust scoring, and data safety gates.
 
 ---
 
 ## Installation (Conceptual)
 
 ```bash
-# One-line (desktop + harness)
+# One-line
 curl -fsSL https://openi.dev/install.sh | bash
 
 # Or
-brew install openi
 npm install -g @openi/cli
-
-# Init project
 openi init
-
-# Launch ADE
 openi
 ```
 
-Claude Code / Codex integration:
+Claude Code / Codex plugin path:
 ```
 /plugin marketplace add openi/openi
 /plugin install openi-core@openi
@@ -157,50 +125,73 @@ Claude Code / Codex integration:
 
 ---
 
-## Brand
+## Brand & Aesthetic
 
-- **Name**: Open •i•
-- **Aesthetic**: Near-black evidence-console / terminal. Phosphor green `#00ff00` primary, clean white secondary.
-- **Mark**: Open ring with central intelligence core (the “i”)
-- **Tagline**: *Systems that prove what happened. Agents that remember and improve.*
-- **License**: MIT
+Open •i• uses a near-black evidence-console aesthetic. Primary color is phosphor green `#00ff00`. The mark is an open ring with a central intelligence core — the “i” in Open •i•.
 
----
+- Background: `#010409`
+- Phosphor: `#00ff00`
+- Secondary: clean white / warm paper for contrast
+- Tagline: *Systems that prove what happened. Agents that remember and improve.*
 
-## Roadmap (Ultimate Version)
-
-### Phase 1 — Foundation
-- [ ] Desktop ADE with parallel worktrees and any-agent support
-- [ ] MCP injection layer for harness capabilities
-- [ ] Core vector memory and basic swarm coordination
-- [ ] Mobile companion (monitor + steer)
-
-### Phase 2 — Intelligence
-- [ ] Full self-learning loop (SONA + trajectory)
-- [ ] Zero-trust federation
-- [ ] MetaHarness grading and security suite
-- [ ] Plugin marketplace
-
-### Phase 3 — Ultimate
-- [ ] Hybrid topology visualizer
-- [ ] Cross-org federation with trust scoring
-- [ ] Edge compute / Sovereign mode
-- [ ] Full compliance and audit export
+Favicon, Open Graph image, and Twitter card are included in the repository so shares and browser tabs look consistent.
 
 ---
 
-## Why Open •i•
+## Guides & Documentation
 
-Ruflo gives agents a brain, memory, and the ability to collaborate as a team.  
-Orca gives humans a beautiful workspace to run and steer fleets of agents.  
+Detailed guides live in `/docs`:
 
-Open •i• gives you both — open, ownable, and built to scale from a single developer to a federated swarm across machines and organizations.
+- [What Is an Agent Harness?](docs/guides/what-is-an-agent-harness.md)
+- [Architecture Overview](docs/guides/architecture.md)
+- [Experience Plane](docs/1-experience-plane.md)
+- [Harness Plane](docs/2-harness-plane.md)
+- [Control Plane](docs/3-control-plane.md)
+
+These pages are written to be useful both for humans and for agents that need to understand the system.
+
+---
+
+## Roadmap
+
+**Phase 1 — Foundation**  
+Desktop ADE with parallel worktrees and any-agent support. MCP injection layer. Core vector memory. Basic swarm coordination. Mobile companion.
+
+**Phase 2 — Intelligence**  
+Full self-learning loop. Zero-trust federation. MetaHarness grading and security suite. Plugin marketplace.
+
+**Phase 3 — Ultimate**  
+Hybrid topology visualizer. Cross-organization federation with trust scoring. Edge / sovereign mode. Full compliance and audit export.
+
+---
+
+## Why This Ranking Matters
+
+People searching for “agent harness”, “open agent harness”, “multi-agent ADE”, “agent orchestration open source”, or “vector memory for agents” should find a clear, ownable answer. Open •i• is written and structured so that:
+
+- The definition of an agent harness is explicit and repeated.
+- The difference between model and harness is clear.
+- Concrete capabilities (memory, learning, federation, worktrees, any-agent) are listed and compared.
+- Installation and workflow examples are copy-pasteable.
+- Branding, metadata, and social cards are consistent so the project is recognizable when shared.
+
+This is not marketing fluff. It is the engineering stance: measure, verify, admit, execute, prove. The harness is the part that makes those claims checkable.
+
+---
+
+## License
+
+MIT. See [LICENSE](LICENSE).
+
+---
+
+## Built by
+
+CodesbyFebin  
+Systems that prove what happened.
 
 **Open the interface. Own the intelligence.**
 
 ---
 
-*Built as the conceptual ultimate fusion of ruvnet/ruflo and stablyai/orca.*  
-*Open source. No lock-in. Your agents. Your memory. Your edge.*
-
-Built by CodesbyFebin
+*Open •i• is an independent open-source project. It draws architectural lessons from Ruflo and Orca but is not affiliated with or endorsed by their maintainers. All trademarks remain with their respective owners.*

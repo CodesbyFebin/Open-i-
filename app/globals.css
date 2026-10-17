@@ -1,0 +1,19 @@
+:root {
+  --bg: #010409;
+  --ink: #f3efe6;
+  --phosphor: #00ff00;
+  --border: #1f2937;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.6;
+}
+a { color: var(--phosphor); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1, h2, h3 { color: var(--phosphor); }
