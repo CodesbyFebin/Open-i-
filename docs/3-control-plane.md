@@ -1,6 +1,6 @@
 # 3. Unified Control Plane
 
-**The cockpit** that unifies Experience and Harness.
+The cockpit that unifies Experience and Harness.
 
 ## Purpose
 One interface that shows worktree fleets *and* swarm topologies, injects harness capabilities when desired, and provides observability, permissions, and audit.
@@ -15,8 +15,8 @@ One interface that shows worktree fleets *and* swarm topologies, injects harness
 - TUI + visual console + desktop
 
 ## Hybrid Modes
-1. **Parallel Fleet** — pure Orca-style worktrees
-2. **Harnessed Swarm** — pure Ruflo-style coordination
+1. **Parallel Fleet** — isolated worktrees for comparison
+2. **Harnessed Swarm** — coordinated multi-agent execution
 3. **Hybrid** — inject harness into selected worktrees
 4. **Federated Edge** — cross-machine zero-trust collaboration
 

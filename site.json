@@ -2,13 +2,13 @@
   "name": "Open •i•",
   "shortName": "Openi",
   "tagline": "The Open Agent Harness & ADE",
-  "description": "Open •i• is the open-source agent harness and Agent Development Environment. Fuse deep multi-agent orchestration, vector memory, self-learning, and zero-trust federation with a polished desktop + mobile workspace for any CLI agent.",
+  "description": "Open •i• is the open-source agent harness and Agent Development Environment. Deep multi-agent orchestration, vector memory, self-learning, and zero-trust federation with a polished desktop + mobile workspace for any CLI agent.",
   "version": "0.1.0",
   "license": "MIT",
   "author": "CodesbyFebin",
   "homepage": "https://codesbyfebin.github.io/Open-i-/",
   "repository": "https://github.com/CodesbyFebin/Open-i-",
-  "keywords": ["agent-harness", "agentic-ai", "multi-agent", "swarm", "mcp", "vector-memory", "federation", "ade", "claude-code", "codex", "open-source", "self-hosted"],
+  "keywords": ["agent-harness", "agentic-ai", "multi-agent", "swarm", "mcp", "vector-memory", "federation", "ade", "open-source", "self-hosted"],
   "topics": ["agent-harness", "agentic-ai", "multi-agent-systems", "swarm-intelligence", "mcp", "vector-database", "self-learning", "federation", "ade", "open-source"],
   "brand": {
     "primary": "#00ff00",
@@ -19,7 +19,7 @@
   },
   "og": {
     "title": "Open •i• — The Open Agent Harness & ADE",
-    "description": "Open-source agent harness that combines swarm orchestration, adaptive vector memory, self-learning, and a polished multi-agent workspace.",
+    "description": "Open-source agent harness with swarm orchestration, adaptive vector memory, self-learning, and a polished multi-agent workspace.",
     "image": "/og.jpg"
   }
 }

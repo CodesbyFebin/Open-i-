@@ -1,19 +1,19 @@
 # 1. Experience Plane
 
-**Orca DNA** — the human interface and workspace for fleets of agents.
+The human interface and workspace for fleets of agents.
 
 ## Purpose
 Provide a polished desktop + mobile ADE where any CLI agent can run in isolated Git worktrees, side-by-side, with rich tooling for monitoring, steering, comparing, and merging results.
 
 ## Core Capabilities
 - Parallel isolated Git worktrees
-- Support for any CLI agent (Claude Code, Codex, Grok, Cursor, OpenCode, Pi, Hermes, etc.) with BYO subscription
+- Support for any CLI agent with bring-your-own subscription
 - High-performance terminals (WebGL, infinite splits, persistent scrollback)
 - Mobile companion (monitor, notifications, follow-up)
 - Design Mode (capture UI elements into prompts)
 - Diff annotation and review
 - Drag-and-drop files/images into agent context
-- GitHub & Linear integration
+- Integrations for common developer tools
 - SSH remote worktrees
 - Computer use
 - Quick open search
