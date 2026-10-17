@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#010409"/>
+      <stop offset="100%" stop-color="#0a0f14"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <g transform="translate(600,140)" filter="url(#glow)">
+    <circle cx="0" cy="0" r="48" stroke="#00ff00" stroke-width="4" fill="none"/>
+    <circle cx="0" cy="0" r="10" fill="#00ff00"/>
+  </g>
+  <text x="600" y="240" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="72" font-weight="600" fill="#f3efe6" text-anchor="middle">Open •i•</text>
+  <text x="600" y="290" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="22" fill="#00ff00" text-anchor="middle">The Open Agent Harness &amp; ADE</text>
+  <text x="600" y="340" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16" fill="#6b7280" text-anchor="middle">Agent = Model + Harness · Swarm · Memory · Learning · Federation</text>
+</svg>
